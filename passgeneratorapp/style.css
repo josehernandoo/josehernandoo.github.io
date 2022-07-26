@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(119, 201, 173);
+    color: rgb(255, 255, 255);
+    font-family: "Poppins",sans-serif;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    display: flex;
+}
+
+.pw-container{
+    background-color: rgb(43, 194, 194);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 400px;
+}
+
+.pw-header{
+    padding: 1rem;
+}
+
+.pw{
+    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    position: relative;
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: black;
+    justify-content: center;
+}
+
+.pw button{
+    background-color: rgb(76, 167, 167);
+    color: white;
+    border: cadetblue;
+    padding: 0.25rem 0.75rem;
+    font-family: inherit;
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    transition: 0.2s ease, transform 0.2s ease;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.pw:hover button{
+    opacity: 1;
+    transform: translate(-50%, 50%);
+}
+
+.pw-body{
+    padding: 0 1rem 1rem;
+}
+
+.form-control{
+    color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem 0;
+}
+
+.generate {
+    background-color: rgb(7, 136, 168);
+    display: block;
+    border: chartreuse;
+    color: rgb(128, 255, 255);
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 0.75rem;
+    font-size: 1.5rem;
+    width: 100%;
+    cursor: pointer;
+}
